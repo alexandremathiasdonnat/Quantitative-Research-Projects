@@ -1,4 +1,4 @@
-# 01 — Discrete-Time Models  
+# 01-Discrete-Time Models  
 
 **Hi there! 👋**
 
