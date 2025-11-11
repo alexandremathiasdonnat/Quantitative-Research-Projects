@@ -2,6 +2,12 @@
 
 **Hi there! 👋**
 
+## About
+
+*Behind every sophisticated trading algorithm lies a discrete model :
+a clean mathematical playground where randomness meets reason.
+Everything begins here: a world where prices evolve step by step, and where arbitrage disappears under the right probability measure to keep markets fair.*
+
 ## Content
 
 This section introduces the **foundations of discrete-time financial models**, combining both **rigorous theory** and **numerical applications in Python**.  
