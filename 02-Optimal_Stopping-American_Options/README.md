@@ -4,7 +4,8 @@
 
 ## About
 
-*In many financial problems, the payoff does not only depend on *what* happens, but on *when* we decide to act. Optimal stopping is the mathematics of timing : the bridge between probability, decision, and American-style derivatives.*
+*Sometimes, the hardest question in financial problems isn’t what to do, it’s when to do it*. This section explores that razor’s edge between patience and action: when waiting has value, and when it silently destroys it. From martingale theory to the Snell envelope, we learn how time itself becomes a tradable asset,
+and how American options transform this invisible timing game into real monetary worth.*
 
 
 ## Content  
@@ -30,10 +31,11 @@ The true objective is to move from abstract definitions to implementable algorit
 
 Feel free to reuse these notebooks if you are interested in how **optimal stopping and American option pricing work in practice**.
 
-If you are new to the topic, you can focus on the theoretical explanations and visualisations to build intuition step by step.
-If you are already familiar with the theory, you can extend the notebooks with your own **numerical experiments**: modify parameters, change payoff structures, test different stopping rules, or benchmark other models.
+If you’re just discovering this topic, take your time — quite literally. Each notebook shows how the abstract notion of “optimal timing” unfolds into code, figures, and meaning. Follow the random walks, the stopping times, and the envelopes: they’ll teach you intuition better than formulas alone.
 
-Make sure the same Python modules are available in your environment  
-before running the notebooks (NumPy, Pandas, Matplotlib, math).
+If you are already familiar with the theory, you can extend the notebooks with your own **numerical experiments**: modify parameters, push to higher 
+𝑁, change payoff structures (test exotic for instance), test different stopping rules, or benchmark other models.
+
+Make sure the same Python modules are available in your environment before running the notebooks (NumPy, Pandas, Matplotlib, math).
 
 ## *Alexandre Mathias DONNAT, Sr*
