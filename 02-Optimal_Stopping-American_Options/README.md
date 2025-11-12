@@ -4,7 +4,7 @@
 
 ## About
 
-*Sometimes, the hardest question in financial problems isn’t what to do, it’s when to do it*. This section explores that razor’s edge between patience and action: when waiting has value, and when it silently destroys it. From martingale theory to the Snell envelope, we learn how time itself becomes a tradable asset,
+*Sometimes, the hardest question in financial problems isn’t what to do, it’s when to do it. This section explores that razor’s edge between patience and action: when waiting has value, and when it silently destroys it. From martingale theory to the Snell envelope, we learn how time itself becomes a tradable asset,
 and how American options transform this invisible timing game into real monetary worth.*
 
 
