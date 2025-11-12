@@ -10,8 +10,7 @@ and how American options transform this invisible timing game into real monetary
 
 ## Content  
 
-This section develops the discrete-time theory of **optimal stopping** and applies it to  
-the pricing of **American options** in a binomial/CRR framework.
+This section develops the discrete-time theory of **optimal stopping** and applies it to the pricing of **American options** in a binomial/CRR framework.
 
 Notebooks combine rigorous probabilistic tools (stopping times, Snell envelope, supermartingales), Markov-chain dynamic programming, and full numerical case studies (American put/call pricing, exercise boundary, early exercise premium).
 
