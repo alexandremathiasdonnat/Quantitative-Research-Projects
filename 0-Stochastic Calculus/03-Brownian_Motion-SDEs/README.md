@@ -34,7 +34,7 @@ The objective is simple: turn abstract continuous-time models into something we 
 | 03.4 | Itô Integral & Itô Calculus | From simple integrands to the Itô integral. Itô isometry. Itô's formula in 1D and multi-dimensions. |
 | 03.5 | SDEs & Numerical Schemes | Euler–Maruyama, strong convergence, OU and GBM case studies, Monte Carlo pricing under GBM. |
 
-## Notes
+## Notes to viewers
 
 Feel free to adapt or extend these notebooks depending on your background.
 
