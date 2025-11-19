@@ -6,10 +6,11 @@
 
 *Inside the Black–Scholes engine we uncover the machinery of modern option pricing: the model that turns raw market option prices into implied volatility smiles and surfaces, and from these implied surfaces into local volatility dynamics used in desk-level SDE simulations. Here we open the hood and examine the mathematical conditions that make this entire* machinery run.
 
-This is therefore the point where the probabilistic framework built in earlier sections crystallises into one of the most elegant achievements of quantitative finance: a complete, arbitrage-free diffusion model where every payoff can be priced through martingale methods, solved through PDEs, and hedged dynamically
 
 ![alt text](smile.png)
 ![alt text](IVsurface-1.jpg)
+
+This is therefore the point where the probabilistic framework built in earlier sections crystallises into one of the most elegant achievements of quantitative finance: a complete, arbitrage-free diffusion model where every payoff can be priced through martingale methods, solved through PDEs, and hedged dynamically
 
 ## Content
 
