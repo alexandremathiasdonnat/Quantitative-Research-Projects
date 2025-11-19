@@ -8,7 +8,7 @@
 
 
 ![alt text](smile.png)
-![alt text](IVsurface-1.jpg)
+![alt text](IVsurface.jpg)
 
 This is therefore the point where the probabilistic framework built in earlier sections crystallises into one of the most elegant achievements of quantitative finance: a complete, arbitrage-free diffusion model where every payoff can be priced through martingale methods, solved through PDEs, and hedged dynamically
 
