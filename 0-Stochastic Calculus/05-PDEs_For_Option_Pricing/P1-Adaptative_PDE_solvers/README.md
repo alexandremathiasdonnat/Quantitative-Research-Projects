@@ -38,8 +38,8 @@ src/
         american_pde.py   // American PDE solver (θ-scheme + projection)
 
 solvers/
-        european_call_solver.ipynb     – PDE price vs closed-form (call)
-        american_put_solver.ipynb – PDE price + exercise boundary (put)
+        european_call_solver.ipynb     // PDE price vs closed-form (call)
+        american_put_solver.ipynb // PDE price + exercise boundary (put)
 ```
 
 Each notebook imports the functions from `src/` and demonstrates how to run a
