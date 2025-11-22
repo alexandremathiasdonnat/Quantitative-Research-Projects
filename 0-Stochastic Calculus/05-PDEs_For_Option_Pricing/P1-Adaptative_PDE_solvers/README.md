@@ -1,4 +1,4 @@
-# Adaptive PDE solvers for European & American options in Black–Scholes (log-space)
+# Adaptive PDE solvers for European & American options (free-boundary) under Black–Scholes (log-space)
 
 This project provides a compact and fully reusable **PDE engine** as a quantitative library for pricing
 **European and American Vanilla options** under the **Black–Scholes model**, implemented
