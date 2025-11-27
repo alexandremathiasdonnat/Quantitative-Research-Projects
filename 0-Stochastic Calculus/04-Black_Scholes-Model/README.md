@@ -4,7 +4,7 @@
 
 ## About
 
-*Inside the Black–Scholes engine we uncover the machinery of modern option pricing: the model that turns raw market option prices into implied volatility smiles and surfaces, and from these implied surfaces into local volatility dynamics used in desk-level SDE simulations. Here we open the hood and examine the mathematical conditions that make this entire* machinery run.
+*Inside the Black–Scholes engine we uncover the machinery of modern option pricing: the model that turns raw market option prices into implied volatility smiles and surfaces, and from these implied surfaces into local volatility dynamics used in desk-level SDE simulations. Here we open the hood and examine the mathematical conditions that make this entire machinery run.*
 
 ![alt text](image.jpg)
 
