@@ -28,7 +28,7 @@ def bs_log_operator_tridiag(
     sigma2 = sigma ** 2
 
     # Coeffs in front of u_{i-1}, u_i, u_{i+1}
-    # cf. ce qu'on avait dérivé: σ²/(2h²), r - σ²/2 sur 2h, etc.
+    # cf. what we had derived: σ²/(2h²), r - σ²/2 over 2h, etc.
     for i in range(N):
         a[i] = sigma2 / (2 * h**2) - (r - sigma2 / 2) / (2 * h)
         b[i] = - sigma2 / (h**2) - r

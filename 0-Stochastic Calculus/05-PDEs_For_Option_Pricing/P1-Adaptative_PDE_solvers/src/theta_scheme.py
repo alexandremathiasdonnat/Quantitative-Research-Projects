@@ -43,7 +43,7 @@ def solve_european_bs_log_theta(
     # terminal condition at T
     u[-1, :] = u_T
 
-    # (I - k θ L_h) → diagonales pour les N points intérieurs
+    # (I - k θ L_h) → diagonals for the N interior points
     main_diag = 1.0 - k * theta * b
     lower_diag = -k * theta * a[1:]   # size N-1
     upper_diag = -k * theta * c[:-1]  # size N-1
@@ -51,7 +51,7 @@ def solve_european_bs_log_theta(
     for n in range(M - 1, -1, -1):
         u_next = u[n + 1, :].copy()
 
-        # L_h u^{n+1} sur les points intérieurs
+        # L_h u^{n+1} on the interior points
         Lu_next = (
             a * u_next[:-2] +
             b * u_next[1:-1] +
@@ -69,7 +69,7 @@ def solve_european_bs_log_theta(
             rhs
         )
 
-        # Bords : ici Dirichlet 0 (option “knock-out” si on sort du domaine)
+        # Limits : here Dirichlet 0 (option “knock-out” if we go out of the domain)
         u[n, 0] = 0.0
         u[n, -1] = 0.0
 
