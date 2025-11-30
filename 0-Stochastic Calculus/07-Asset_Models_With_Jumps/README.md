@@ -59,24 +59,11 @@ A standalone, fully replicable project: a **Jump–Diffusion Option Pricing Engi
     - Side-by-side simulation of Merton and Kou jump–diffusion paths
     - Model comparison table across strikes and maturities
 
-### Purpose
+## Purpose
 
-A clean, practical environment to explore how jumps reshape option prices, fatten return tails, generate natural volatility smiles, and break perfect hedging.
+This chapter provides a clean and practical environment to understand how jumps reshape option prices, generate fat tails and natural volatility smiles, and fundamentally break perfect hedging, making the market incomplete.
 
-This project mirrors real sell-side workflows: PIDE pricing, smile generation, model comparison, and stochastic scenario simulation.
-
-## Why this Chapter Matters
-
-Jump–diffusion models solve the biggest weakness of Black–Scholes: **markets jump**.
-
-Earnings gaps, macro shocks, flash crashes, all introduce discontinuities that pure Brownian diffusions cannot represent.
-
-This chapter develops both:
-
-- **the theory** (Poisson processes, SDEs with jumps, martingale corrections, incomplete markets),
-- **and the application** (PIDE engines, numerical schemes, implied smiles, Monte Carlo simulation).
-
-It is a complete and industry-aligned introduction to modern models of market discontinuities.
+It bridges theory (Poisson processes, jump–diffusion SDEs, martingale drift corrections) with practice project (PIDE pricing, numerical schemes, implied-volatility smiles, and Monte Carlo jump simulations), delivering an industry-aligned introduction to realistic market discontinuities, the kind encountered daily in equity and FX derivatives desks.
 
 ---
 
