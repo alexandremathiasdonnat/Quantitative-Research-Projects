@@ -5,7 +5,8 @@ Hi there! 👋
 ## About
 
 *Credit risk modelling revolves around a deceptively simple question: when does a firm default, and how does that single event reshape the value of every liability it has issued?
-Behind this question lies the entire architecture of modern credit theory — the timing of failure, the uncertainty around it, and the transmission of that uncertainty into bond prices, CDS spreads, and portfolio losses. What looks like a binary event becomes a continuous, probabilistic object that markets must price, hedge, and anticipate.*
+Behind this question lies the entire architecture of modern credit theory, the timing of failure, the uncertainty around it, and the transmission of that uncertainty into bond prices, CDS spreads, and portfolio losses. What looks like a binary event becomes a continuous, probabilistic object that markets must price, hedge, and anticipate.*
+
 This 8th chapter develops all three foundational approaches used in modern quantitative credit:
 
 **Structural models (Merton, Black–Cox):**  
