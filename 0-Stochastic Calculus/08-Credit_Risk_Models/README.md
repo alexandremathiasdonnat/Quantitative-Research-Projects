@@ -1,75 +1,72 @@
 # 08 - Credit Risk Models
 
-Hi there! 👋
+This chapter contains two complementary components:
 
-## About
+## 1. Theory & Practice
 
-*Credit risk modelling revolves around a deceptively simple question: when does a firm default, and how does that single event reshape the value of every liability it has issued?
-Behind this question lies the entire architecture of modern credit theory, the timing of failure, the uncertainty around it, and the transmission of that uncertainty into bond prices, CDS spreads, and portfolio losses. What looks like a binary event becomes a continuous, probabilistic object that markets must price, hedge, and anticipate.*
+**Folder:** `Theory/`
 
-This 8th chapter develops all three foundational approaches used in modern quantitative credit:
+Three notebooks introducing the full mathematical framework of modern credit risk modelling, from firm-value dynamics (structural), to hazard-rate calibration (intensity), to dependence structures for multi-name portfolios (copulas).
 
-**Structural models (Merton, Black–Cox):**  
-default arises from the firm's balance sheet and asset dynamics.
+### 08.1 – Structural Models (Merton & Black–Cox)
 
-**Reduced-form / intensity models (hazard rates):**  
-default is a surprise event governed by a stochastic intensity calibrated directly to CDS curves.
+Builds the micro-economic foundations of default: the firm value follows a GBM under the risk-neutral measure, equity appears as a call option on the firm's assets, and debt becomes a contingent claim.
+Default occurs when $V_T < D$ (terminal case) or when $V_t$ touches a safety barrier (first-passage).
+Outputs include closed-form structural PDs, distance-to-default, barrier-based survival via reflection arguments, and sensitivity heatmaps to initial firm value and volatility.
 
-**Copula models for multi-name credit:**  
-provide a dependence structure between several default times, essential for baskets, CDO tranches, and index products.
+### 08.2 – Intensity-Based Credit Models (Reduced Form)
 
-Each framework reflects a different market philosophy:
+Default becomes a surprise event governed by a hazard rate $\lambda(t)$, producing survival:
 
-- **Structural** : economic story, equity/credit linkage, firm-value modelling.
-- **Intensity** : market-implied survival probabilities, fast calibration, CDS-driven.
-- **Copulas** : modelling joint defaults and tail dependence for portfolio credit products.
+$$S(t) = \exp\left(-\int_0^t \lambda(s) \, ds\right)$$
 
-Together, they form the backbone of the pricing and risk analytics used in credit desks worldwide.
+This framework yields defaultable zero-coupon pricing and the CDS premium–protection balance used to infer the market-implied intensity $\lambda^*$.
+Illustrations include flat and piecewise-constant intensity curves, defaultable discount factors, and Monte-Carlo sampling of exponential default times.
 
-## Content
+### 08.3 – Copulas for Multi-Name Credit
 
-### Structural Credit Models (Merton & Black–Cox)
-- GBM firm-value dynamics under the risk-neutral measure
-- Equity as a call option; debt as risk-free bond minus put
-- Closed-form default probabilities
-- First-passage default with barriers (covenants)
-- Survival via reflection principles
-- Heatmaps and sensitivity analysis (V₀, σ)
+Separates marginal PDs from their dependence using Sklar's theorem.
+The Gaussian copula provides a baseline but no tail dependence; the t-copula introduces fat-tailed joint defaults; Archimedean copulas (Clayton, Gumbel, Frank) capture asymmetric dependence patterns.
+Simulations highlight clustering, systemic behaviour, and why joint defaults cannot be inferred from marginals alone.
 
-### Intensity-Based Models (Reduced-Form)
-- Hazard rates and survival probabilities
-- Defaultable zero-coupon pricing
-- CDS premium vs protection legs
-- Piecewise-constant hazard calibration
-- Cox-process simulation (CIR intensity + inverse integrated hazard)
-- Numerical illustrations of survival curves, spreads, and defaultable ZC prices
+These notebooks together form the conceptual toolkit behind credit pricing, CDS calibration, and portfolio default modelling used by credit-quants, xVA teams, and systemic-risk supervisors.
 
-### Copula Models for Multi-Name Credit
-- Sklar's theorem and the separation of marginals vs dependence
-- Gaussian copula and its limitations (no tail dependence)
-- t-copula and fat-tailed joint defaults
-- Archimedean copulas (Clayton, Gumbel, Frank)
-- Tail dependence and systemic risk
-- Simulation and visual comparison of dependence structures
+## 2. Project04 - CreditRisk_Engine
 
-## Structure
+**Interactive structural + CDS calibration + copula simulation engine**
 
-| Notebook | Title | Core idea |
-|----------|-------|-----------|
-| 08.1 | Structural Models – Merton & Black–Cox | Default arises from firm-value dynamics; equity = option, debt = contingent claim; first-passage vs terminal default. |
-| 08.2 | Intensity-Based Credit Models | Default is a surprise event with a hazard rate λ(t); survival, CDS pricing, and stochastic intensity simulation. |
-| 08.3 | Copulas for Multi-Name Credit | Construct joint laws of default times from market-calibrated marginals; Gaussian/t/Archimedean copulas and tail dependence. |
+A standalone, ready-to-use project: a full credit risk engine through a library I developed that computes structural PDs, calibrates CDS-implied intensities, simulates correlated portfolio defaults, and estimates tail-risk metrics (VaR / ES) under Gaussian and t-copulas.
 
-## Notes to viewers
+### Features
 
-Structural, reduced-form, and copula models respond to different modelling needs. Structural models provide intuition and explicit formulas, but are difficult to calibrate to market spreads. Reduced-form models sacrifice economic interpretation in favor of calibration speed and market consistency. Copulas complete the picture by allowing joint modelling of many obligors, critical for CDOs, baskets, and index tranches.
+- Structural default modelling (Merton)
+- CDS hazard-rate calibration (reduced form)
+- Correlated default simulation via Gaussian & t-copulas
+- Portfolio loss distribution, VaR 99%, ES 97.5%
+- Extreme-scenario detection (multi-default events)
 
-If you are discovering these ideas: move slowly between frameworks. Structural vs intensity vs copulas is not a continuum but three distinct modelling philosophies.
+**Sensitivities:**
+- Correlation sweep ($\rho \to$ VaR)
+- t-copula tail-heaviness sweep (df $\to$ VaR)
+- Systemic intensity shock (+20%)
+- Marginal contribution to VaR (MCR)
 
-If you already know credit modelling: use this chapter to deepen intuition on tail dependence, first-passage vs terminal default, and the meaning of market-implied survival curves. Try stress-testing λ(t), simulating correlated defaults, or modifying the copula to explore systemic scenarios.
+### Outputs
 
-The code cells are light, practical, and extendable. You can add calibration routines, simulate large credit portfolios, compare tranche losses, or experiment with different copulas. The notebooks aim to bridge theory and practice in a concise, production-oriented format.
+- Per-firm structural PDs, distance-to-default, CDS-implied $\lambda^*$
+- Structural vs CDS survival curves
+- Portfolio loss histogram (Gaussian / t-copula)
+- VaR & ES comparison across copulas
+- Extreme-scenario statistics (≥3 defaults)
+- Sensitivity tables ($\rho$-sweep, df-sweep)
+- Name-level marginal risk contributions
+
+### Purpose
+
+This chapter provides a clean and practical environment to understand how firms default, how markets price this risk, and how default correlations generate fat-tailed portfolio losses.
+
+It bridges : Theory (Merton, hazard rates, copulas), Numerics (Monte-Carlo simulation, calibration, dependence modelling), Industry practice (CDS calibration, portfolio VaR/ES, systemic risk stress-testing)
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+**Alexandre Mathias Donnat, Sr**
