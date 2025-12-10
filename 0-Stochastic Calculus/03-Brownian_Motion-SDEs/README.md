@@ -1,48 +1,83 @@
-# 03 – Brownian Motion, Itô Calculus and SDEs
+# 03 - Brownian Motion & SDEs
 
-**Hi there! 👋**
+This chapter contains two complementary components:
 
-## About
+## 1. Theory & Practice
 
-*Continuous-time models are where randomness becomes smooth, unpredictable yet structured.
-This section is about learning that structure, how noise accumulates, how randomness can be "integrated", and how an entire world of diffusions emerges from a single object: Brownian motion.*
+**Folder:** `Theory/`
 
-We start from the microscopic behaviour of random paths, take the leap into Itô calculus, and finally reach full stochastic differential equations (SDEs).
-Everything that follows — Black–Scholes, Heston, interest-rate models, American options, stochastic volatility — rests on this block.
+Five notebooks forming the mathematical and numerical foundations of continuous-time stochastic modelling.
+This sequence builds everything needed to understand Brownian motion, Itô calculus, and SDEs — the pillars of all modern quantitative finance models.
 
-To set the stage, here is the landscape of continuous-time processes we will encounter:
+### 03.1 – Continuous-Time Processes
 
-<img src="image.jpg">
+Filtrations, adapted processes, stopping times.
+First visual and conceptual intuition of randomness evolving in continuous time.
 
+### 03.2 – Brownian Motion
 
+Construction of $W_t$, Gaussian increments, scaling laws, quadratic variation.
+Rigorous empirical tests and simulations validating theoretical properties.
 
-## Content
+### 03.3 – Continuous-Time Martingales
 
-This section develops the theory and the numerical practice of Brownian motion and SDEs, from the core properties of $W_t$ to the simulation of diffusion models used in quantitative finance.
+Martingale behaviour of key processes such as $W_t$, $W_t^2 - t$, and exponential martingales.
+Optional stopping and martingale intuition in continuous time.
 
-The notebooks combine clean probabilistic foundations (Gaussian increments, filtrations, martingales), rigorous Itô calculus, and full-scale numerical experiments (Euler–Maruyama, OU, GBM, Monte Carlo pricing).
+### 03.4 – Itô Integral & Itô Calculus
 
-The objective is simple: turn abstract continuous-time models into something we can simulate, visualise, and use for real financial applications.
+From simple processes to the full Itô integral.
+Itô isometry, Itô's formula (1D and multi-dimensional), and applications to diffusions.
 
-## Structure
+### 03.5 – SDEs & Numerical Schemes
 
-| Notebook | Title | Core Idea |
-|----------|-------|-----------|
-| 03.1 | Continuous-Time Processes | Filtrations, adapted processes, stopping times. First visual intuition of continuous-time randomness. |
-| 03.2 | Brownian Motion | Construction, Gaussian increments, scaling, quadratic variation. Rigorous tests and simulations. |
-| 03.3 | Continuous-Time Martingales | Martingale properties of $W_t$, $W_t^2 - t$, exponentials. Optional stopping in continuous time. |
-| 03.4 | Itô Integral & Itô Calculus | From simple integrands to the Itô integral. Itô isometry. Itô's formula in 1D and multi-dimensions. |
-| 03.5 | SDEs & Numerical Schemes | Euler–Maruyama, strong convergence, OU and GBM case studies, Monte Carlo pricing under GBM. |
+Euler–Maruyama discretisation, strong/weak convergence, OU and GBM simulations.
+Monte Carlo pricing under GBM and first contact with diffusion-based financial models.
 
-## Notes to viewers
+These notebooks together form the theoretical toolkit that underpins Black–Scholes, Heston, OU models, term-structure models, stochastic volatility, and modern derivatives pricing.
 
-Feel free to adapt or extend these notebooks depending on your background.
+## 2. ProjectOU – Ornstein–Uhlenbeck Process Simulator
 
-If this is your first time working with Brownian paths, take it slow: nothing in continuous time is intuitive at first. Trajectories are nowhere differentiable, variation is infinite, integrals must be rebuilt from scratch — but watching real simulations will make the theory click much faster than the formulas alone.
+**Folder:** `ProjectOU-OrnsteinUhlenbeck_ProcessSimulator/`
 
-If you already know the theory, challenge the notebooks: experiment with different time steps, try Milstein, simulate Lévy jumps, test convergence failures when assumptions are broken, or calibrate OU/GBM parameters on synthetic data.
+A standalone, interactive simulation project applying SDE theory to the Ornstein–Uhlenbeck mean-reverting process:
 
-Make sure the standard modules are available in your environment (NumPy, Pandas, Matplotlib, SciPy if needed).
+$$dX_t = \theta(\mu - X_t)\,dt + \sigma dW_t$$
 
+This project transforms OU theory into a calibrated, real-time simulation tool directly driven by live financial data.
 
-**Alexandre Mathias DONNAT, Sr**
+### Features
+
+- **Exact & Euler simulation** of OU paths
+- **Maximum Likelihood Estimation** of $(\theta, \mu, \sigma)$
+- **Real-time calibration** from freshly downloaded market data (S&P 500 realized volatility, EUR/USD FX)
+- **Exact transition-density sampling** for future forecasting
+- **Real vs simulated path comparison**
+- **Scenario extension:** historical series + OU-simulated future
+- **Fully interactive simulator:** every run produces different future paths and distributions
+
+### Outputs
+
+- Calibrated OU parameters (mean-reversion speed, long-run level, diffusion)
+- Predictive distribution of $X_T$ via exact OU transition density
+- Overlay plots comparing true market behaviour vs OU dynamics
+- Long-horizon scenarios illustrating drift, reversion, or instability
+- Full extended time series combining history and simulated future
+
+### Purpose
+
+This project offers a clean, practical environment to understand, calibrate, and exploit mean-reverting processes — central to:
+
+- volatility modelling
+- interest-rate term-structure (Vasicek, CIR)
+- FX macro modelling
+- spreads & statistical arbitrage
+- Monte Carlo risk simulations
+
+It bridges:
+**theory** (Brownian motion, Itô calculus, SDEs) TO **numerics** (Euler, MLE, Monte Carlo) TO **real market application** (calibration, forecasting, scenario generation).
+
+---
+
+*Alexandre Mathias DONNAT, Sr*
+
