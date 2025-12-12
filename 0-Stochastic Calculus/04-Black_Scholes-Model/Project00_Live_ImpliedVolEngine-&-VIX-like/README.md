@@ -108,9 +108,8 @@ dashboard.ipynb            # Interactive end-to-end volatility dashboard
 The dashboard produces four main outputs:
 - **Output 1 – Implied Volatility Table**: Clean IV snapshot across strikes and maturities  
 - **Output 2 – Smiles & Term Structures**: Cross-sectional volatility diagnostics  
-- **Output 3 – Distribution Diagnostics**: IV dispersion and outlier detection  
-- **Output 4 – IV Surface & Heatmap**: Global volatility structure visualization  
-- **Output 5 – VIX-like Index**: Single-number volatility stress indicator
+- **Output 3 – IV Surface & Heatmap**: Global volatility structure visualization  
+- **Output 4 – VIX-like Index**: Single-number volatility stress indicator
 
 ---
 **Alexandre Mathias DONNAT, Sr**
