@@ -54,25 +54,23 @@ The engine is packaged as a clean and modular library, driven through a simple i
 ### Black–Scholes Implied Volatility
 
 Option prices are inverted by solving
-$$
-C_{\text{market}} = BS(S_0, K, T, r, q, \sigma)
-$$
+$$C_{\text{market}} = \text{BS}(S_0, K, T, r, q, \sigma)$$
+
 for the implied volatility $\sigma$, using robust numerical root-finding methods with theoretical bounds. Contracts violating arbitrage bounds or suffering from microstructure noise are excluded.
 
 ### Volatility Surface Reconstruction
 
-Given implied volatilities $(\sigma(K, T))$ observed on an irregular grid, the surface is reconstructed through interpolation on a regular grid:
-$$
-(K_i, T_j) \mapsto \sigma_{\text{interp}}(K_i, T_j)
-$$
+Given implied volatilities $\sigma(K, T)$ observed on an irregular grid, the surface is reconstructed through interpolation on a regular grid:
+
+$$\sigma_{\text{interp}}(K_i, T_j) = f(K_i, T_j)$$
+
 This provides a continuous representation suitable for visualization and aggregation.
 
 ### VIX-like Index (Simplified)
 
 The VIX-like index aggregates near-the-money implied volatilities around a target maturity:
-$$
-\text{VIX}_{\text{int}} = \left(\sum_i w_i\,\sigma_i^2\right)^{1/2}
-$$
+
+$$\text{VIX}_{\text{int}} = \sqrt{\sum_i w_i\,\sigma_i^2}$$
 
 where weights emphasize ATM options and contracts close to the target maturity.
 
