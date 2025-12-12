@@ -120,7 +120,7 @@ def interpolate_iv_surface(
             (KK, TT),
             method=method,
         )
-        # Some points may be NaN (outside convex hull) → fallback to nearest
+        # Some points may be NaN (outside convex hull):  fallback to nearest
         if method == "linear" and np.isnan(IV_surface).any():
             IV_surface_nearest = griddata(
                 points,

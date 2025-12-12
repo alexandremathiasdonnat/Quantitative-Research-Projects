@@ -131,7 +131,7 @@ def simple_vix_like(
     iv_values = slice_df["iv"].values
     iv_atm_weighted = float(np.sum(weights * iv_values))
 
-    # Annualize already in IV (sigma is annualized) → just express in %
+    # Annualize already in IV (sigma is annualized) : just express in %
     vix_level_pct = iv_atm_weighted * 100.0
     return vix_level_pct
 

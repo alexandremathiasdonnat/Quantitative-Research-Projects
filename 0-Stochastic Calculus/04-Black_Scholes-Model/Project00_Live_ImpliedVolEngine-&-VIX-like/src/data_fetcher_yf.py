@@ -58,10 +58,10 @@ def _process_chain(
 
 def fetch_options_snapshot(
     ticker: str,
-    n_expiries: int = 8,              # plus de maturités → surface moins dégénérée
-    min_T_days: int = 10,             # évite l'ultra short term (0–7 jours)
-    max_T_days: int = 270,            # garde ~10 jours à 9 mois
-    moneyness_band: Tuple[float, float] = (0.7, 1.3),  # vire les extrêmes
+    n_expiries: int = 8,            
+    min_T_days: int = 10,             
+    max_T_days: int = 270,           
+    moneyness_band: Tuple[float, float] = (0.7, 1.3),  
 ) -> Tuple[pd.DataFrame, float]:
     """
     Build a clean options snapshot for the given ticker.

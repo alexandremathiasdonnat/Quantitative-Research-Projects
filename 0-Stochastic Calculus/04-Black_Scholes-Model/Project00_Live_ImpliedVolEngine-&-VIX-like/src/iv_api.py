@@ -11,7 +11,7 @@ This module provides a clean, single entry point for the notebook:
 - full_analysis(...) → orchestrates the whole pipeline.
 
 The idea:
-    CSV / DataFrame  →  IVs  →  surface  →  VIX-like index  →  plots & interpretation
+    DataFrame  →  IVs  →  surface  →  VIX-like index  →  plots & interpretation
 """
 
 from typing import Dict, Any, Optional, Tuple
