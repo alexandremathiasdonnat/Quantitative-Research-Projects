@@ -55,7 +55,7 @@ The engine is packaged as a clean and modular library, driven through a simple i
 
 Option prices are inverted by solving
 $$
-C_{\text{market}} = BS(S_0, K, T, r, q, \sigma)
+Cmarket = BS(S0, K, T, r, q, σ)
 $$
 for the implied volatility $\sigma$, using robust numerical root-finding methods with theoretical bounds. Contracts violating arbitrage bounds or suffering from microstructure noise are excluded.
 
@@ -63,7 +63,7 @@ for the implied volatility $\sigma$, using robust numerical root-finding methods
 
 Given implied volatilities $(\sigma(K, T))$ observed on an irregular grid, the surface is reconstructed through interpolation on a regular grid:
 $$
-(K_i, T_j) \mapsto \sigma_{\text{interp}}(K_i, T_j)
+(K_i, T_j) → σ_.interp(K_i, T_j)
 $$
 This provides a continuous representation suitable for visualization and aggregation.
 
@@ -71,8 +71,7 @@ This provides a continuous representation suitable for visualization and aggrega
 
 The VIX-like index aggregates near-the-money implied volatilities around a target maturity:
 $$
-\text{VIX}_{\text{int}} = \left(\sum_i w_i\,\sigma_i^2\right)^{1/2}
-$$
+VIX_.int = ( Σ_i w_i · σ_i² )**0.5$$
 
 where weights emphasize ATM options and contracts close to the target maturity.
 
