@@ -111,7 +111,7 @@ root/
     ├── portfolio_api.py     # Unified high-level engine interface
     └── plotting.py          # All visualization utilities
 
-└── constraints.txt           # Suggested market, investor, and constraint configurations
+└── constraints.txt          # Suggested market, investor, and constraint configurations
 
 └── dashboard.ipynb          # Interactive end-to-end dashboard
 ```
