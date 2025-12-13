@@ -1,0 +1,48 @@
+Scenario Library - Suggested Parameter Sets
+
+Below are a few realistic “scenario presets” you can test by editing only the Input Parameters block (mu, sigma, r, T, gamma, pi_min/pi_max, use_costs/cost_rate, and simulation settings). Each preset represents a different market regime and investor style.
+
+        1) Balanced Long-Term Investor (Core buy-side baseline)
+
+                Market: mu=0.07, sigma=0.18, r=0.02, T=3.0, W0=1.0
+                Investor: gamma=5.0 (risk-averse)
+                Constraints: pi_min=0.0, pi_max=1.0 (long-only, no leverage)
+                Costs: use_costs=True, cost_rate=0.0025
+                Interpretation: conservative allocation, strong preference for stable wealth distribution.
+
+        2) Aggressive Growth / Hedge-Fund Style (high risk tolerance)
+
+                Market: mu=0.10, sigma=0.22, r=0.02, T=1.0
+                Investor: gamma=1.0 (log-utility, growth-oriented)
+                Constraints: pi_min=-2.0, pi_max=2.0 (allow leverage + short)
+                Costs: use_costs=True, cost_rate=0.0025
+                Interpretation: seeks growth, accepts drawdowns; implementation frictions become critical.
+
+        3) Low-Return / Sideways Market (hard environment for risk)
+
+                Market: mu=0.03, sigma=0.18, r=0.02, T=2.0
+                Investor: gamma=3.0
+                Constraints: pi_min=0.0, pi_max=1.0
+                Costs: use_costs=True, cost_rate=0.0025
+                Interpretation: risk premium is small, so many risky allocations are not compensated.
+
+        4) Crisis / High Volatility Regime (tail-risk dominates)
+
+                Market: mu=0.04, sigma=0.40, r=0.02, T=1.0
+                Investor: gamma=8.0 (very conservative)
+                Constraints: pi_min=0.0, pi_max=1.0
+                Costs: use_costs=True, cost_rate=0.0050 (50 bps)
+                Interpretation: downside dominates; robust strategies (low turnover) tend to win.
+
+        5) “Frictionless Theory” Benchmark (sanity check)
+
+                Market: keep your baseline
+                Investor: test gamma ∈ {1, 2, 5}
+                Constraints: choose any
+                Costs: use_costs=False
+                Interpretation: isolates the pure theory outcome; useful to compare with realistic runs.
+
+Practical Notes for a user-Testing:
+If you want fair comparisons across runs, set a fixed seed (e.g., seed=42).
+Tightening constraints (e.g., pi_min=0, pi_max=1) reduces extreme exposures and often reduces instability.
+Increasing cost_rate mainly penalizes strategies with high turnover (typically HJB), revealing the theory–implementation gap.
