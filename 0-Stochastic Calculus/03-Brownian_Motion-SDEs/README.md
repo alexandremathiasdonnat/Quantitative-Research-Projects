@@ -36,9 +36,9 @@ Monte Carlo pricing under GBM and first contact with diffusion-based financial m
 
 These notebooks together form the theoretical toolkit that underpins Black–Scholes, Heston, OU models, term-structure models, stochastic volatility, and modern derivatives pricing.
 
-## 2. ProjectOU – Ornstein–Uhlenbeck Process Simulator
+## 2. Project A – Ornstein–Uhlenbeck Process Simulator & MLE Calibration
 
-**Folder:** `ProjectOU-OrnsteinUhlenbeck_ProcessSimulator/`
+**Folder:** `Project A  - Ornstein Uhlenbeck Process Simulator & MLE Calibration/`
 
 A standalone, interactive simulation project applying SDE theory to the Ornstein–Uhlenbeck mean-reverting process:
 
