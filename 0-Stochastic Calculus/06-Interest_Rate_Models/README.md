@@ -15,7 +15,7 @@ The core short-rate and forward-rate models used in practice: Vasicek, CIR, affi
 
 These notebooks provide the mathematical and conceptual toolkit required to understand yield-curve construction, no-arbitrage constraints, and the dynamics of fixed-income markets.
 
-## 2. Project02–TermStructure-&-ShortRate_Calibration_Engine/
+## 2. Project D - Term-Structure Modeling & Short-Rate Calibration Engine/
 Interactive calibration & pricing project
 
 A standalone, fully replicable project: a Term-Structure & Short-Rate Calibration Engine built directly on top of the ideas from the Theory notebooks.

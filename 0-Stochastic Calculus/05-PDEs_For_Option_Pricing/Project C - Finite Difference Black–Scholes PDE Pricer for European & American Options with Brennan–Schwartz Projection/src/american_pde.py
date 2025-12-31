@@ -19,9 +19,9 @@ def solve_american_put_bs_log_theta(
     PDE (inequality):
         v_t + L v ≤ 0,  v ≥ payoff,  (v - payoff)(v_t + L v) = 0
 
-    On discretise comme pour l'européenne, puis à chaque pas de temps:
-        - on résout le système linéaire
-        - on projette : v^n_i = max(v^n_i, payoff_i)
+    We discretize as for the European case, then at each time step:
+        - solve the linear system
+        - project: v^n_i = max(v^n_i, payoff_i)
     """
     M = grid.M
     N = grid.N
@@ -63,7 +63,7 @@ def solve_american_put_bs_log_theta(
         u[n, 0] = 0.0
         u[n, -1] = 0.0
 
-        # Projection American : pas d'arbitrage, valeur ≥ payoff immédiat
+        # American projection: no arbitrage, value ≥ immediate payoff
         u[n, :] = np.maximum(u[n, :], payoff)
 
     return u

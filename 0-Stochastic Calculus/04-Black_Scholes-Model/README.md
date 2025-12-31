@@ -19,9 +19,9 @@ Together, they explain how diffusion models, martingales, PDEs, and hedging argu
 | 04.4 | American Options – Optimal Stopping | Early exercise logic, Snell envelope, backward induction, numerical free-boundary approximation. |
 | 04.5 | Implied & Local Volatility | Invert BS to implied vol, construct smiles and surfaces, introduce local volatility (Dupire), and connect to VIX-like quantities. |
 
-## 2. Project B – Live Implied Volatility Engine & VIX-like Index
+## 2. Project B – Live Implied Volatility Engine & VIX-like Index Dashboard
 
-**Folder:** `Project B - Live Implied Vol Engine & VIX like Index/`
+**Folder:** `Project B - Live Implied Vol Engine & VIX like Index Dashboard/`
 
 A standalone, market-facing project that transforms Black–Scholes theory into a live implied volatility analysis engine.
 

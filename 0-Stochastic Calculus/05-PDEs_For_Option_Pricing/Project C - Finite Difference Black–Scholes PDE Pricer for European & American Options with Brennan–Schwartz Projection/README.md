@@ -1,8 +1,8 @@
-# Adaptive PDE solvers for European & American options (free-boundary) under Black–Scholes (log-space)
+# Black–Scholes Log-Space Finite-Difference PDE Pricer for European and American Options (Free-Boundary via Brennan–Schwartz Projection)
 
-This project provides a compact and fully reusable **PDE engine** as a quantitative library for pricing
-**European and American Vanilla options** under the **Black–Scholes model**, implemented
-in **log-price** and solved using **finite differences** with a θ-scheme.
+This project provides a compact and fully reusable PDE engine as a quantitative library for pricing
+European and American Vanilla options under the Black–Scholes model, implemented
+in log-price and solved using finite differences with a θ-scheme.
 
 The goal is to offer a clean, well-structured codebase that can be used as:
 
@@ -13,17 +13,14 @@ The goal is to offer a clean, well-structured codebase that can be used as:
     control).
 
 ## What the engine does
-
-- Builds a **time–space grid** on $(t,x) \in [0,T] \times [-L, L]$ where $x=\log S$.
-- Constructs the **Black–Scholes log-space operator** as a **tridiagonal matrix**.
-- Solves the pricing PDE using a **θ-scheme** (explicit, implicit, Crank–Nicolson).
-- Uses a custom **Thomas algorithm** for fast tridiagonal solves in $O(N)$.
-- Prices **European options** by backward time stepping.
-- Prices **American puts** via a simple **free-boundary LCP projection step**:
+- Builds a time–space grid on $(t,x) \in [0,T] \times [-L, L]$ where $x=\log S$.
+- Constructs the Black–Scholes log-space operator as a tridiagonal matrix.
+- Solves the pricing PDE using a θ-scheme (explicit, implicit, Crank–Nicolson).
+- Uses a custom Thomas algorithm for fast tridiagonal solves in $O(N)$.
+- Prices European options by backward time stepping.
+- Prices American puts via a simple free-boundary problem handled via Brennan–Schwartz projection:
     $$u^{n}_i = \max(\tilde u^{n}_i,\, \text{payoff}_i).$$
 
-The implementation is intentionally minimal, transparent, and stable — suitable
-for teaching, research, or interview-level quantitative work.
 
 
 ## Repository structure
@@ -130,5 +127,5 @@ Possible extensions:
 
 All follow the same workflow:
 
-Inputs → PDE solver → Price surface + plots
+Choose a dashboard-notebook → fill Inputs → PDE solver → Price surface + plots
 

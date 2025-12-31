@@ -1,4 +1,4 @@
-# 05 – Option Pricing & PDEs
+# 05 - Option Pricing & PDEs
 
 This chapter contains two components:
 
@@ -12,17 +12,17 @@ Three notebooks covering the full mathematical and numerical pipeline:
 
 They form the theoretical and practical core of PDE-based option pricing.
 
-## 2. P1-Adaptive_PDE_solvers/ (interactive project)
+## 2. Project C - Black–Scholes Log-Space Finite-Difference PDE Pricer for European and American Options (Free-Boundary via Brennan–Schwartz Projection)/ (interactive project)
 
 A standalone mini-project I developed: a pricing engine built on top of the algorithms from the Theory notebooks.
 
 **Features:**
 
-- Fully interactive solver (maturity, strike, vol, rate, grid sizes, etc.)
-- Numerical BS PDE solver (European call)
-- Brennan–Schwartz LCP solver (American put)
-- Price curves + full numerical surfaces
-- Intuitive, lightweight, easy to experiment with
+- Notebook-driven pricing dashboards (maturity, strike, volatility, rate, grid resolution)
+- Finite-difference Black–Scholes PDE solver for European options
+- American option pricing via Brennan–Schwartz projection
+- Price curves and full numerical solution surfaces
+- Lightweight, modular, and easy to experiment with
 
 Designed to explore how PDE pricing reacts when parameters move — just adjust, run, and visualise.
 
