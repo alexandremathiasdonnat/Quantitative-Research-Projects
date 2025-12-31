@@ -31,7 +31,7 @@ Simulations highlight clustering, systemic behaviour, and why joint defaults can
 
 These notebooks together form the conceptual toolkit behind credit pricing, CDS calibration, and portfolio default modelling used by credit-quants, xVA teams, and systemic-risk supervisors.
 
-## 2. Project04 - CreditRisk_Engine
+## 2. Project F - Credit Risk Engine -  Structural Default, CDS Calibration & Copula-Based Portfolio Loss/
 
 **Interactive structural + CDS calibration + copula simulation engine**
 
