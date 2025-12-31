@@ -55,7 +55,7 @@ Designed to mirror trading-desk workflows for volatility diagnostics and regime 
 
 **Project C - Finite-Difference Black–Scholes PDE Pricer (European & American Options)**
 
-`Folder` 0-Stochastic Calculus/05-PDEs_For_Option_Pricing/Project C - Finite Difference Black–Scholes PDE Pricer for European & American Options with Brennan–Schwartz Projection   
+`Folder` 0-Stochastic Calculus/05-PDEs_For_Option_Pricing/Project C - Finite Difference Black–Scholes PDE Pricer for European & American Options with Brennan–Schwartz Projection/   
 **Direct access** : [Project C - Finite-Difference Black–Scholes PDE Pricer (European & American Options)](https://github.com/alexandremathiasdonnat/Quantitative-Research-Projects/tree/main/0-Stochastic%20Calculus/05-PDEs_For_Option_Pricing/Project%20C%20-%20Finite%20Difference%20Black%E2%80%93Scholes%20PDE%20Pricer%20for%20European%20%26%20American%20Options%20with%20Brennan%E2%80%93Schwartz%20Projection)
 
 *A clean, reusable PDE pricing engine in log-space, solving the Black–Scholes equation via θ-schemes.
