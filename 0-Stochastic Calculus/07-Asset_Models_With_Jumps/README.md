@@ -38,7 +38,7 @@ Pricing via expectations (Merton mixture formula), change of measure, and comput
 
 ---
 
-## 2. Project03 – JumpDiffusion_OptionPricing_Engine/
+## 2. Project E - Jump–Diffusion PIDE Solving Engine for Option Pricing/
 
 **Interactive PIDE Pricing Engine**
 
