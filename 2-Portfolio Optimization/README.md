@@ -30,8 +30,8 @@ Topics Covered : Mean–Variance optimization under convex constraints, Risk Par
 | 03 | CVaR Optimization | Tail-risk–aware portfolio construction using scenario-based Expected Shortfall |
 | 04 | Backtesting Strategies & Allocation Dynamics | Rolling rebalancing, transaction costs, turnover, and comparative evaluation |
 
-## 2. ProjectHJB — Dynamic Portfolio Allocation via HJB  
-**Folder:** `Projet-HJB_Optimal_Portfolio_Allocation_Engine-Hamilton–Jacobi–Bellman-(PDE-based)/`
+## 2. Projet G - Optimal Portfolio Allocation Engine via Hamilton–Jacobi–Bellman (Stochastic Control, PDE-based)
+**Folder:** `Projet G - Optimal Portfolio Allocation Engine via Hamilton–Jacobi–Bellman (Stochastic Control, PDE-based)/`
 
 This standalone project reframes portfolio optimization as a **continuous-time stochastic control problem**.
 
