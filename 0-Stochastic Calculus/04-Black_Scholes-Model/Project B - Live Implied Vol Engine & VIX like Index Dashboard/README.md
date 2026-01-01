@@ -1,4 +1,4 @@
-# Live Implied Volatility Engine & VIX-like Dashboard
+# Project B - Live Implied Vol Engine & VIX like Index Dashboard
 
 Live Market Data • Black–Scholes Inversion • Volatility Smiles • IV Surface • VIX-like Index 
 
