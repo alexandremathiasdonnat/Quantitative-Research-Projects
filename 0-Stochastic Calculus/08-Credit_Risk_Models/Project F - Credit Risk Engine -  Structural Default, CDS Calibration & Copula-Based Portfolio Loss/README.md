@@ -1,4 +1,4 @@
-# Credit Risk Engine : Structural Default, CDS Calibration, Copula Portfolio Loss
+# Project F - Credit Risk Engine -  Structural Default, CDS Calibration & Copula-Based Portfolio Loss
 
 Merton Structural Model • CDS Calibration • Copula Portfolio Simulation • VaR & ES • Sensitivity Analysis
 
