@@ -1,4 +1,4 @@
-# Ornstein–Uhlenbeck Process Simulator, Maximum Likelihood Calibration & Real-Market Applications
+# Project A - Ornstein–Uhlenbeck Process Simulator, Maximum Likelihood Calibration & Real-Market Applications
 
 Mean-Reversion Dynamics • Exact Transition Density • MLE Estimation • Volatility Modeling • FX Analysis • Scenario Generation
 
