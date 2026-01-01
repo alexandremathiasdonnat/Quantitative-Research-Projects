@@ -1,6 +1,6 @@
 # 08 - Credit Risk Models
 
-Hi there! 👋
+Hi there ! 👋
 
 ## About
 
@@ -69,4 +69,4 @@ The code cells are light, practical, and extendable. You can add calibration rou
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

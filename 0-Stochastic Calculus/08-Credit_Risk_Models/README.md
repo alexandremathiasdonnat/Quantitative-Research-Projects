@@ -69,4 +69,4 @@ It bridges : Theory (Merton, hazard rates, copulas), Numerics (Monte-Carlo simul
 
 ---
 
-**Alexandre Mathias Donnat, Sr**
+***Alexandre Mathias Donnat, Sr***

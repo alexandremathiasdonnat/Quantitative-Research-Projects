@@ -4,7 +4,7 @@ Merton Structural Model • CDS Calibration • Copula Portfolio Simulation • 
 
 ## About
 
-This project delivers a complete and customisable credit-risk engine for quant-credit / xVA-risk desks, that combines structural modelling (Merton), reduced-form CDS calibration, and copula-based portfolio simulation : from user-defined firm data and portfolio inputs, it computes default probabilities and distance-to-default, calibrates hazard rates from CDS spreads, simulates correlated default times through Gaussian and t-copulas, generates full loss distributions with VaR/Expected Shortfall, and evaluates systemic risk through sensitivity analysis and marginal risk contributions.
+*This project delivers a complete and customisable credit-risk engine for quant-credit / xVA-risk desks, that combines structural modelling (Merton), reduced-form CDS calibration, and copula-based portfolio simulation : from user-defined firm data and portfolio inputs, it computes default probabilities and distance-to-default, calibrates hazard rates from CDS spreads, simulates correlated default times through Gaussian and t-copulas, generates full loss distributions with VaR/Expected Shortfall, and evaluates systemic risk through sensitivity analysis and marginal risk contributions.*
 
 **Ready to use tool : engine packaged in a compact library I developed, easily driven through a simple pipeline:**
 
@@ -184,4 +184,4 @@ The dashboard produces three main outputs:
 **Output 3 – Sensitivities & MCR**: Correlation sweep, df sweep, λ-shock, incremental VaR contributions
 
 ---
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***
