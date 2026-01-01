@@ -44,5 +44,6 @@ If you already know the theory, challenge the notebooks: experiment with differe
 
 Make sure the standard modules are available in your environment (NumPy, Pandas, Matplotlib, SciPy if needed).
 
+---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

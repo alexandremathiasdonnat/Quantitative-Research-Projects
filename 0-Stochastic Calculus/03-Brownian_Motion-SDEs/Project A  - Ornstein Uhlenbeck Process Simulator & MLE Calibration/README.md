@@ -109,7 +109,7 @@ An extended time series for what-if analyses, risk engines, and Monte-Carlo scen
 
 All functions are modular and ready for reuse on any others data (mean-reversion models, interest-rate modeling, factor models, etc.).
 
-## Insights
+## Learnings
 
 - OU captures the mean-reverting nature of volatility very well.
 - OU fits FX levels only partially, slow reversion and narrow dispersion.
@@ -117,4 +117,4 @@ All functions are modular and ready for reuse on any others data (mean-reversion
 - The scenario generator provides an easy way to run forward-looking stress tests.
 
 ---
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***
