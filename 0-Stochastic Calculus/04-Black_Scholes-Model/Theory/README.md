@@ -1,6 +1,6 @@
-# 04 – The Black–Scholes Model
+# 04 - The Black–Scholes Model
 
-**Hi there! 👋**
+**Hi there ! 👋**
 
 ## About
 

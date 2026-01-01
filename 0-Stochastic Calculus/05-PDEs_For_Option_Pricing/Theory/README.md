@@ -1,4 +1,4 @@
-# 05 – Option Pricing & Partial Differential Equations
+# 05 - Option Pricing & Partial Differential Equations
 
 **Hi there! 👋**
 
@@ -44,8 +44,6 @@ For now, the engine supports:
 
 It is intuitive, lightweight, and easy to play with if you want to explore how numerical pricing behaves when parameters move.
 
-https://github.com/alexandremathiasdonnat/Quantitative-Research-Projects/tree/main/0-Stochastic%20Calculus/05-PDEs_For_Option_Pricing/P1-Adaptative_PDE_solvers
-
 ## Why this chapter matters
 
 Modern desks rely heavily on numerical PDEs:
@@ -66,4 +64,6 @@ try different schemes, stress the stability limits, or increase space/time resol
 
 All notebooks use only standard Python tools (NumPy, Matplotlib, SciPy), so you can experiment freely or extend them with your own pricing routines (e.g., barriers, rebates, local vol, Heston PDE).
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***

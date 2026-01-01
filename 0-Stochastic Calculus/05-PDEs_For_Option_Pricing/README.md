@@ -24,6 +24,8 @@ A standalone mini-project I developed: a pricing engine built on top of the algo
 - Price curves and full numerical solution surfaces
 - Lightweight, modular, and easy to experiment with
 
-Designed to explore how PDE pricing reacts when parameters move — just adjust, run, and visualise.
+Designed to explore how PDE pricing reacts when parameters move, just adjust, run, and visualise.
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***

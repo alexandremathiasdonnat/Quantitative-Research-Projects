@@ -1,16 +1,35 @@
 # Project C - Finite Difference Black–Scholes PDE Pricer for European & American Options with Brennan–Schwartz Projection
 
-This project provides a compact and fully reusable PDE engine as a quantitative library for pricing
-European and American Vanilla options under the Black–Scholes model, implemented
-in log-price and solved using finite differences with a θ-scheme.
+## About
 
-The goal is to offer a clean, well-structured codebase that can be used as:
+*This project delivers a clean, fully reusable PDE-based option pricing engine
+designed to study European and American vanilla options under the
+Black–Scholes model when closed-form solutions are unavailable or insufficient.*
 
-- a **numerical benchmark** against closed-form formulas or binomial trees,
-- a **research sandbox** to experiment with stability, convergence, and
-    free-boundary behaviour,
-- a **building block** for more advanced models (local vol, jumps, stochastic
-    control).
+Starting from user-defined market and numerical parameters, the engine solves the
+Black–Scholes equation in log-price space using finite-difference θ-schemes
+and handles early-exercise constraints through a Brennan–Schwartz
+linear-complementarity projection.
+
+It is built as a **numerical laboratory** to understand:
+- how option prices emerge from the PDE formulation,
+- how early exercise turns pricing into a free-boundary problem,
+- how stability, convergence, and grid design affect results in practice.
+
+**Ready-to-use tool:**  
+the solver is packaged as a lightweight Python library and driven through
+interactive Jupyter dashboards:
+
+*User choice of the option type to price through choosing which Jupyter dashbboard to use → User customizable inputs → PDE solver → price surfaces & diagnostics.*
+
+## Scope & Use Cases
+
+This engine can be used as:
+- a numerical benchmark against Black–Scholes closed forms and CRR trees,
+- a free-boundary visualizer for American options,
+- a research sandbox to study θ-schemes, projection methods, and convergence,
+- a foundational block for more advanced models
+  (local volatility, jumps, stochastic control).
 
 ## What the engine does
 - Builds a time–space grid on $(t,x) \in [0,T] \times [-L, L]$ where $x=\log S$.
@@ -42,12 +61,12 @@ solvers/
 Each notebook imports the functions from `src/` and demonstrates how to run a
 full pricing loop with a few lines of code.
 
-## How to use it (conceptual tutorial to viewers)
+## How to use the Pricer 
 
 Each solver-notebook works like a mini-dashboard:
-- you choose the option you want to price (here only european or american),
-- you open the corresponding notebook-solver,
-- you fill in the input parameters,
+- User choose the option he want to price (here only european or american),
+- User open the corresponding notebook-solver,
+- User fill in the input parameters,
 - the engine computes everything automatically.
 
 Only two notebooks exist for now (European call / American put),
@@ -55,9 +74,9 @@ but they are fully modular, the solver adapts to any inputs.
 
 **1. EuropeanCall Solver Notebook : simple PDE call pricer**
 
-This notebook lets you price a European call option with a PDE solver.
+This notebook lets the user price a European call option with a PDE solver.
 
-**Step 1 : Choose your inputs**
+**Step 1 : Choose user inputs**
 - $S_0$, $K$, $T$
 - volatility $\sigma$
 - interest rate $r$
@@ -74,7 +93,7 @@ It automatically:
 
 **Step 3 : Read the outputs**
 
-You get:
+User gets:
 - the PDE price at $t=0$,
 - the Black–Scholes closed-form price,
 - the absolute error between both,
@@ -83,11 +102,9 @@ You get:
 This notebook acts as a numerical dashboard:
 change the inputs, re-run, instantly see how the PDE price reacts.
 
----
+**2. AmericanPut Solver Notebook : free-boundary (LCP) solver**
 
-**2. AmericanPut Solver Notebook : free-boundary solver**
-
-This notebook is a full American put pricer.
+This notebook implements a full American put pricer.
 
 **Inputs**
 
@@ -97,20 +114,24 @@ Same as the European pricer, plus:
 **Internal steps (automatic)**
 
 The notebook:
-- solves the PDE in log-space with the $\theta$-scheme,
-- applies the American projection step at each time,
-- reconstructs the exercise/continuation region.
+- solves the Black–Scholes PDE in log-space using a $\theta$-scheme,
+- enforces the early-exercise constraint through a Brennan–Schwartz–type
+  projection step:
+  $$u_i^n = \max(\tilde u_i^n,\ \text{payoff}_i),$$
+- lets the exercise/continuation regions emerge numerically from the solution.
+
+The free boundary is therefore not solved explicitly, but arises naturally from
+the linear complementarity formulation.
 
 **Outputs**
 
-You obtain:
-- the American price at $S_0$,
-- a heatmap showing exercise vs continuation,
-- the optimal exercise boundary as a function of time,
+User obtains:
+- the American option price at $S_0$,
+- a heatmap showing exercise vs continuation regions,
+- the numerically implied optimal exercise boundary as a function of time,
 - a comparison with a CRR binomial tree.
 
-This notebook acts as a free-boundary visualizer for American options.
-
+This notebook acts as a practical free-boundary visualizer for American options.
 
 
 ## Extending the solver
@@ -128,4 +149,7 @@ Possible extensions:
 All follow the same workflow:
 
 Choose a dashboard-notebook → fill Inputs → PDE solver → Price surface + plots
+
+---
+***Alexandre Mathias DONNAT, Sr***
 
