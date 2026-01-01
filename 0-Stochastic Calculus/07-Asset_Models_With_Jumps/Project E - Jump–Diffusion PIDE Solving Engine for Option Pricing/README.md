@@ -1,4 +1,4 @@
-# Jump–Diffusion Option Pricing Engine
+# Project E - Jump–Diffusion PIDE Solving Engine for Option Pricing
 
 *Merton & Kou Models | PIDE Solver | Volatility Smile Generation | Monte-Carlo Jump Simulation*
 
