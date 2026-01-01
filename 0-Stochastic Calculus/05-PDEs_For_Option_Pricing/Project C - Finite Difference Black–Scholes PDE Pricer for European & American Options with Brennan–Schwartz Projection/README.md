@@ -1,4 +1,4 @@
-# Black–Scholes Log-Space Finite-Difference PDE Pricer for European and American Options (Free-Boundary via Brennan–Schwartz Projection)
+# Project C - Finite Difference Black–Scholes PDE Pricer for European & American Options with Brennan–Schwartz Projection
 
 This project provides a compact and fully reusable PDE engine as a quantitative library for pricing
 European and American Vanilla options under the Black–Scholes model, implemented
