@@ -26,7 +26,7 @@ The true objective is to move from abstract definitions to implementable algorit
 | **02.4** | Snell Envelope & Markov Chains | Dynamic programming on finite-state Markov chains. Stopping vs continuation regions. |
 | **02.5** | American Options – Application | Full case study: American put/call pricing in the CRR model, exercise boundary, early exercise premium, convergence vs Black–Scholes. |
 
-## Notes  
+## Notes to viewers
 
 Feel free to reuse these notebooks if you are interested in how **optimal stopping and American option pricing work in practice**.
 

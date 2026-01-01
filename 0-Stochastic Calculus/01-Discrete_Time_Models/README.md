@@ -26,9 +26,7 @@ The notebooks mix **mathematical structure** and **computational practice**, pro
 | **01.3** | Complete Markets & Pricing | Replication, fair pricing and expectation under the risk-neutral measure. |
 | **01.4** | Cox–Ross–Rubinstein (CRR) Model | Binomial tree model and convergence to the Black–Scholes limit. |
 
----
-
-## Notes  
+## Notes to viewers
 
 Feel free to reuse these notebooks if you're interested in understanding how discrete-time pricing mechanisms work in practice.  
 
