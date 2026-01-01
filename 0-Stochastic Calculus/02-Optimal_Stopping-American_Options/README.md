@@ -1,6 +1,6 @@
-# 02-Optimal Stopping and American Options  
+# 02 - Optimal Stopping and American Options  
 
-**Hi there! 👋**
+**Hi there ! 👋**
 
 ## About
 

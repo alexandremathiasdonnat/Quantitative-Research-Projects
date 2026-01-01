@@ -1,4 +1,4 @@
-# 03 – Brownian Motion, Itô Calculus and SDEs
+# 03 - Brownian Motion, Itô Calculus and SDEs
 
 **Hi there! 👋**
 
