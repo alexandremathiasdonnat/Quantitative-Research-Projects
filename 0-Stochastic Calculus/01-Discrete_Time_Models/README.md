@@ -30,8 +30,7 @@ The notebooks mix **mathematical structure** and **computational practice**, pro
 
 ## Notes  
 
-Feel free to reuse these notebooks if you're interested in understanding  
-**how discrete-time pricing mechanisms work in practice**.  
+Feel free to reuse these notebooks if you're interested in understanding how discrete-time pricing mechanisms work in practice.  
 
 If you’re discovering this field, take the time to focus on the theoretical explanations (they’ll help you grasp the logic behind the models).  
 
@@ -39,5 +38,7 @@ If you’re already familiar with these concepts, you can extend the notebooks b
 
 Make sure the same Python modules are installed in your environment  before running the notebooks (NumPy, Matplotlib, Pandas, math).  
 
-<h3><span style="color:#800000;"><strong> </strong> <em>Alexandre Mathias DONNAT, Sr</em></span></h3>
+---
+
+***Alexandre Mathias DONNAT, Sr***
 
