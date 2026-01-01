@@ -1,6 +1,6 @@
 Scenario Library - Suggested Parameter Sets
 
-Below are a few realistic “scenario presets” you can test by editing only the Input Parameters block (mu, sigma, r, T, gamma, pi_min/pi_max, use_costs/cost_rate, and simulation settings). Each preset represents a different market regime and investor style.
+Below are a few realistic “scenario presets” a User can test by editing only the Input Parameters block (mu, sigma, r, T, gamma, pi_min/pi_max, use_costs/cost_rate, and simulation settings). Each preset represents a different market regime and investor style.
 
         1) Balanced Long-Term Investor (Core buy-side baseline)
 

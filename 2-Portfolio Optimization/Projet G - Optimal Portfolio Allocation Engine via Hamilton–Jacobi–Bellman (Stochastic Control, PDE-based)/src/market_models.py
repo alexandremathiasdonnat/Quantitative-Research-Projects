@@ -17,7 +17,7 @@ Notes
 - We interpret pi_t as a *fraction of wealth* in the risky asset (can be >1 if leveraged, negative if short).
 - In the "pure" Merton (CRRA + GBM) case, the optimal pi* is constant.
   However we still implement a full HJB numerical engine because:
-  (1) it is the architecture you need for extensions (constraints, costs, multi-asset),
+  (1) it is the architecture we need for extensions (constraints, costs, multi-asset),
   (2) it demonstrates end-to-end portfolio stochastic control.
 """
 

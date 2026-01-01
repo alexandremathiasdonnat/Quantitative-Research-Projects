@@ -32,4 +32,4 @@ Portfolios are constructed using a consistent universe of liquid ETFs (e.g. SPY,
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

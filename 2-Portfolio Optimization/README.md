@@ -72,4 +72,4 @@ By combining static convex optimization with dynamic HJB-based control, this blo
 
 ---
 
-**Alexandre Mathias DONNAT**
+***Alexandre Mathias DONNAT***

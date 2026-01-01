@@ -149,8 +149,8 @@ This reference provides exersices and the unifying framework linking probability
 This chapter is designed as a quantitative research purpose, not a collection of isolated notebooks.  
 Each section prepares the ground for the next, and every project translates mathematics into executable models that reflect real market mechanisms.
 
-If you as a reader, you understand this chapter, you understand why and how modern quantitative finance works, and where it breaks.
+If you as a reader, understand this chapter, you understand why and how modern quantitative finance works, and where it breaks.
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

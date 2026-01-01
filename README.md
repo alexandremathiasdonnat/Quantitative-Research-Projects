@@ -110,4 +110,4 @@ Strategies are evaluated net of transaction costs using expected utility, highli
 
 ---
 
-**Alexandre Mathias Donnat**
+***Alexandre Mathias Donnat***

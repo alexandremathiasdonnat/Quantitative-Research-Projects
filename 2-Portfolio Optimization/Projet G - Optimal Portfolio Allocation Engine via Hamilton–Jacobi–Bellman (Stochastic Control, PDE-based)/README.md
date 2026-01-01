@@ -4,7 +4,7 @@ Stochastic Control • HJB Equation • CRRA Utility • Transaction Costs • B
 
 ## About
 
-This project delivers a research-oriented portfolio allocation engine designed to study dynamic asset allocation under uncertainty using stochastic control techniques.
+*This project delivers a research-oriented portfolio allocation engine designed to study dynamic asset allocation under uncertainty using stochastic control techniques.*
 
 Starting from a single set of user-defined inputs (market assumptions, investor preferences, and implementation constraints), the engine computes the theoretically optimal allocation policy via solving the HJB equation, implements this policy in a realistic trading environment, and benchmarks it against standard buy-side allocation strategies. The objective is allocation interpretation: understanding how different portfolio rules perform net of transaction costs, when evaluated through an investor's expected utility. This tool can serve as a foundational building block for portfolio research, systematic asset management, and quantitative hedge fund applications. A dedicated `constraints.txt` file is included to provide some classical predefined parameter configurations (market regimes, investor profiles, and implementation constraints) that can be directly applied to the dashboard input section.
 
@@ -164,4 +164,4 @@ In practice, the HJB framework typically remains a conceptual reference point, w
 These extensions are deliberately outside the scope of this project, whose objective is to provide a clean, interpretable foundation for portfolio research, not a fully industrialized trading system.
 
 ---
-**Alexandre Mathias DONNAT**
+***Alexandre Mathias DONNAT***

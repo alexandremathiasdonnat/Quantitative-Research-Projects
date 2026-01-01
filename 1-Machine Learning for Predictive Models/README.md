@@ -34,4 +34,4 @@ Features are engineered from SPY price data (returns, volatility, momentum, and 
 - interpret ML models using explainability tools
 
 ---
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

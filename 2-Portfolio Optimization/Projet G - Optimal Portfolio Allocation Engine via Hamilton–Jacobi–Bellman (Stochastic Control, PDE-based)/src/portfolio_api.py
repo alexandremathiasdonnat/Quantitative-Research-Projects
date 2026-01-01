@@ -1,6 +1,6 @@
 # src/portfolio_api.py
 """
-High-level API for the notebook/dashboard.
+API for the notebook/dashboard.
 
 This is the single entry-point layer, so the notebook stays clean:
 - solve_hjb(params)
