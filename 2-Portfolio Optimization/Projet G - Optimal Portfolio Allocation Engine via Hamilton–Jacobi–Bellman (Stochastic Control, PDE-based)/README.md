@@ -1,4 +1,4 @@
-# Optimal Portfolio Allocation Engine - Hamilton–Jacobi–Bellman (PDE-based)
+# Projet G - Optimal Portfolio Allocation Engine via Hamilton–Jacobi–Bellman (Stochastic Control, PDE-based)
 
 Stochastic Control • HJB Equation • CRRA Utility • Transaction Costs • Buy-Side Strategy Comparison
 
