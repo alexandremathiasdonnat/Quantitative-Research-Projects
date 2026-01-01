@@ -37,4 +37,6 @@ If you are already familiar with the theory, you can extend the notebooks with y
 
 Make sure the same Python modules are available in your environment before running the notebooks (NumPy, Pandas, Matplotlib, math).
 
-## *Alexandre Mathias DONNAT, Sr*
+---
+
+***Alexandre Mathias DONNAT, Sr***
