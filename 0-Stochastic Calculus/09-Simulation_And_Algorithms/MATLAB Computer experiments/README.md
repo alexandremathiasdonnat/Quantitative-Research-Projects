@@ -17,9 +17,9 @@ The objective is to show clean minimal use-cases of:
 
 - `simulate_bs.m`  
     Simulates and plots several sample paths of a Black–Scholes asset
-    ```math
-    dS_t = S_t (r\,dt + \sigma\,dW_t).
-    ```
+  
+    $dS_t = S_t (r\,dt + \sigma\,dW_t).$
+
     Uses the exact geometric Brownian motion solution.
 
 - `mc_call.m`  
@@ -30,9 +30,7 @@ The objective is to show clean minimal use-cases of:
 
 - `mc_call_control_variate.m`  
     Uses the terminal underlying price $`S_T`$ as a **control variate**, exploiting the fact that
-    ```math
-    \mathbb{E}[S_T] = S_0 e^{rT}
-    ```
+    $\mathbb{E}[S_T] = S_0 e^{rT}$
     under the risk-neutral measure. Demonstrates how the optimal control variate coefficient can be estimated from the sample and how much the variance is reduced.
 
 - `plot_hist.m`  
