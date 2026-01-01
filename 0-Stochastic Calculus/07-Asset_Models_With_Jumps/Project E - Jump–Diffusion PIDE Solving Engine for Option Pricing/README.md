@@ -185,4 +185,4 @@ The dashboard produces four outputs:
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

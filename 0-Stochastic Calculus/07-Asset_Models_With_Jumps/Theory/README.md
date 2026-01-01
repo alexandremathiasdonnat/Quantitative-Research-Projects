@@ -1,6 +1,6 @@
-# 07 – Asset Models with Jumps
+# 07 - Asset Models with Jumps
 
-**Hi there! 👋**
+**Hi there ! 👋**
 ## About
 *Real markets don’t move smoothly. Prices gap on earnings releases, crash on unexpected news, and react instantly to macro events. These discontinuities break the continuous geometry of Brownian diffusions, and that’s where jump–diffusion models enter.*
 
@@ -35,4 +35,6 @@ If you already know diffusion models well, use this chapter to deepen your under
 
 The code cells are light and extendable. You can add Monte Carlo calibrations, compute hedging P&L distributions, or modify the jump-size distribution to test how pricing reacts. Warnings are disabled at the top of the notebooks for cleaner output.
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***

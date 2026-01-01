@@ -45,7 +45,7 @@ def build_jump_integral_matrix(
         MertonJumpModel or KouJumpModel instance.
     y_min, y_max : float
         Truncation range for jump sizes Y. Integrals outside are ignored.
-        In practice, you choose a range large enough to capture most
+        In practice, we choose a range large enough to capture most
         of the distribution mass (e.g. ±5 * sigma_J for Merton).
     Ny : int
         Number of quadrature points in [y_min, y_max].

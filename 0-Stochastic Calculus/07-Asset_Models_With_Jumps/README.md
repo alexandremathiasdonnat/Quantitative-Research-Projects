@@ -1,4 +1,4 @@
-# 07 – Asset Models with Jumps
+# 07 - Asset Models with Jumps
 
 This chapter contains two complementary components:
 
@@ -67,4 +67,4 @@ It bridges theory (Poisson processes, jump–diffusion SDEs, martingale drift co
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***

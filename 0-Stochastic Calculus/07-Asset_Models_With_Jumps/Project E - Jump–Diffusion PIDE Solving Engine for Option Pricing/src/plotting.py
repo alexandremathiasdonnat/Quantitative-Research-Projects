@@ -28,7 +28,7 @@ def plot_price_surface(
 ) -> None:
     """Plot price surface U(tau, S)."""
     T = tau_grid[-1]
-    # Convert tau (time-to-maturity) to actual time t = T - tau if you want;
+    # We can convert tau (time-to-maturity) to actual time t = T - tau if we want;
     # here we just show tau.
     Tau, S = np.meshgrid(tau_grid, S_grid, indexing="ij")
 
@@ -42,7 +42,7 @@ def plot_price_surface(
     plt.tight_layout()
 
 
-# --- Black–Scholes helpers for implied vol -------------------------------
+# Black–Scholes helpers for implied vol 
 
 def _norm_cdf(x: np.ndarray) -> np.ndarray:
     """Standard normal CDF using error function."""
