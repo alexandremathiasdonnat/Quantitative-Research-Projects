@@ -15,7 +15,7 @@ Starting from a market zero-coupon yield curve (CSV input), the engine:
 - Simulates short-rate paths using exactly the calibrated SDE parameters
     (simulation & distribution shown only for Vasicek choice in the notebook for clarity and lightness)
 
-**Key idea 1:** the calibration output $(κ^*, θ^*, σ^*, r_0^*)$ are exactly the parameters of the SDE.
+**Key idea 1:** the calibration output $(κ^{\ast}, θ^{\ast}, σ^{\ast}, r_0^{\ast})$ are exactly the parameters of the SDE.
 
 **Key idea 2:** the simulation of $r_t$ uses these same calibrated parameters, ensuring full model consistency.
 
@@ -192,4 +192,5 @@ t_grid, r_paths = simulate_vasicek_paths(
 - Par swap rate recovered automatically
 - Paths mean-revert toward the calibrated long-term mean θ*
 
-**Alexandre Mathias DONNAT, Sr**
+---
+***Alexandre Mathias DONNAT, Sr***

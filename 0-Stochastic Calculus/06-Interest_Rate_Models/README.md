@@ -22,7 +22,7 @@ A standalone, fully replicable project: a Term-Structure & Short-Rate Calibratio
 
 ### Features
 - Calibration of Vasicek or CIR to any market zero-coupon curve (CSV input).
-- Estimation of parameters \((\kappa, \theta, \sigma, r_0)\) via loss minimization.
+- Estimation of parameters $(\kappa, \theta, \sigma, r_0)$ via loss minimization.
 - Reconstruction of the model-implied term structure (ZC prices, yields, forwards).
 - Comparison vs market (errors, diagnostics, plots).
 
@@ -34,6 +34,8 @@ A standalone, fully replicable project: a Term-Structure & Short-Rate Calibratio
 - Interactive dashboard notebook for immediate testing with any curve
 
 ### Purpose
-A clean, practical environment to explore how short-rate models reproduce market yield curves, how calibration behaves, and how model-consistent pricing emerges from the underlying dynamics \(r(t)\).
+A clean, practical environment to explore how short-rate models reproduce market yield curves, how calibration behaves, and how model-consistent pricing emerges from the underlying dynamics $r(t)$.
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***

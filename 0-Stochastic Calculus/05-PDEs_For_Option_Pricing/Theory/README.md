@@ -1,6 +1,6 @@
 # 05 - Option Pricing & Partial Differential Equations
 
-**Hi there! 👋**
+**Hi there ! 👋**
 
 ## About
 

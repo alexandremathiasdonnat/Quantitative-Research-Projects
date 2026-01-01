@@ -1,13 +1,13 @@
-# 06 – Interest Rate Models
+# 06 - Interest Rate Models
 
-Hi there! 👋
+Hi there ! 👋
 
 ## About
 
 *To price anything in fixed income, we must understand how the entire yield curve moves. A shift in the short rate instantly changes every bond price, reshapes portfolio values, and ripples across maturities. Forward rates and LIBORs matter just as much: they are quoted directly in markets, used as benchmarks, and often act as the underlying of options such as caps, floors, and swaptions. Since these rates reflect many interacting risk factors, modelling their joint dynamics is essential.*
 
 Interest-rate models provide exactly that: a coherent description of how all points on the curve evolve together.
-In this chapter, we start from short-rate models (Vasicek, CIR) and progress to forward-rate models (HJM, BGM), revealing how bond prices, forward rates and LIBORs are generated and stitched together by no-arbitrage.*
+In this chapter, we start from short-rate models (Vasicek, CIR) and progress to forward-rate models (HJM, BGM), revealing how bond prices, forward rates and LIBORs are generated and stitched together by no-arbitrage.
 
 
 ![Historical Yield Curves](https://at.scalable.capital/images/kcbf79ije7q7/5irxgO0jfVhwjbR4YFgzCs/4970a56f5d3f9ec4e81bb70da937683f/yc1_changing_curve_and_prices.png)
@@ -43,4 +43,6 @@ If you already know the probabilistic framework(Girsanov, martingale pricing, af
 The code cells are lightweight and can be extended:
 you can add calibration examples, simulate short-rate paths (Euler), or test Black's caplet formula versus Monte Carlo in a few lines. Warnings are disabled at the top of the notebooks for cleaner output.
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***
