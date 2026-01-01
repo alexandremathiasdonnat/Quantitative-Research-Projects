@@ -1,6 +1,6 @@
 # 10 - Time Series (Structural & Dynamic Modeling of FX)
 
-Hi there! 👋
+Hi there ! 👋
 
 ## About
 
@@ -57,4 +57,4 @@ The two notebooks work together:
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***
