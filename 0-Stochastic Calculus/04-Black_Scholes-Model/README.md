@@ -1,4 +1,4 @@
-# 04 – Black–Scholes Model, Volatility & Implied Dynamics
+# 04 - Black–Scholes Model, Volatility & Implied Dynamics
 
 This chapter contains two complementary components:
 
@@ -53,4 +53,4 @@ It shows how Black–Scholes is used in reverse in practice, with implied volati
 As the keystone of the framework, Chapter 04 connects stochastic calculus to real option prices, transforming abstract diffusion models into observable and tradable market objects.
 
 ---
-**Alexandre Mathias DONNAT**
+***Alexandre Mathias DONNAT***

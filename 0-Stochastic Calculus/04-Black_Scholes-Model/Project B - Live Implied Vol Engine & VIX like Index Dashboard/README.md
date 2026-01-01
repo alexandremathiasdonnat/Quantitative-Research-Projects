@@ -112,5 +112,5 @@ The dashboard produces four main outputs:
 - **Output 4 – VIX-like Index**: Single-number volatility stress indicator
 
 ---
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***
 

@@ -1,8 +1,7 @@
 """
 iv_api.py
 
-High-level API for the Implied Volatility Engine & VIX-like Dashboard.
-
+API for the Implied Volatility Engine & VIX-like Dashboard.
 This module provides a clean, single entry point for the notebook:
 
 - compute_iv_dataframe(options_df, S0, r, q)
@@ -10,8 +9,7 @@ This module provides a clean, single entry point for the notebook:
 - compute_vix_like(iv_df, surface, vix_params)
 - full_analysis(...) → orchestrates the whole pipeline.
 
-The idea:
-    DataFrame  →  IVs  →  surface  →  VIX-like index  →  plots & interpretation
+The idea: DataFrame  →  IVs  →  surface  →  VIX-like index  →  plots & interpretation
 """
 
 from typing import Dict, Any, Optional, Tuple

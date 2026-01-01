@@ -150,11 +150,11 @@ def vix_like_from_surface(
         VIX^2 ~ (2 / T) * Σ [ ΔK_i / K_i^2 * e^{rT} * Q(K_i) ]
     where Q(K_i) is the (out-of-the-money) option price at strike K_i.
 
-    Here, for pedagogy:
+    Here:
     - We don't have prices per se on the grid, only IVs.
     - We approximate prices via Black–Scholes on the surface's IV.
 
-    For the dashboard, you can:
+    For the dashboard, we can:
     - Either ignore this and use simple_vix_like(),
     - Or keep it as an "advanced" demo.
 

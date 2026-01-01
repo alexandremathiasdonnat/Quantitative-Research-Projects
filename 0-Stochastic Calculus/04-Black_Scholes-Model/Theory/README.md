@@ -48,4 +48,6 @@ If you already know the core results, use these notebooks to push further: stres
 
 Before running the notebooks, make sure the standard modules are installed (NumPy, Pandas, Matplotlib, SciPy, warnings). If you want to pull raw market data for smiles or term structures, yfinance is also included and used in the implied-volatility notebook. You can disable warnings at the top of each notebook if you prefer a cleaner output.
 
-**Alexandre Mathias DONNAT, Sr**
+---
+
+***Alexandre Mathias DONNAT, Sr***
