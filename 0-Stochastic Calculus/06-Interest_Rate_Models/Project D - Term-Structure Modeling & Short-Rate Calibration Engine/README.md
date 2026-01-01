@@ -1,4 +1,4 @@
-# Term-Structure & Short-Rate Calibration Engine
+# Project D - Term-Structure Modeling & Short-Rate Calibration Engine
 
 **Vasicek & Cox-Ingersoll-Ross Models | Yield-Curve Fitting | IR Product Pricing | SDE Simulation**
 
