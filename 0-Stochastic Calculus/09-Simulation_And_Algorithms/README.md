@@ -51,10 +51,10 @@ A collection of compact MATLAB/Octave scripts illustrating the core ideas of the
 - Control variates
 - Histograms and simple plots
 
-These scripts mirror historical teaching workflows in quantitative finance and complement the Jupyter notebook (Pthon chunks) with lightweight numerical experiments.
+These scripts mirror historical teaching workflows in quantitative finance and complement the Jupyter notebook (Python chunks) with lightweight numerical experiments.
 
 ---
 
-**Alexandre Mathias DONNAT, Sr**
+***Alexandre Mathias DONNAT, Sr***
 
 
